@@ -10,8 +10,12 @@ Before compile, you need to install:
 - libpthread /libpthread-stubs0-dev
 
 After cloning into your workspace run:
-./autogen.sh
-make && make install
+- ./autogen.sh
+- make && make install
+
+If something goes wrong/missing while compiling, you can run to return to the clean state:
+- make clean
+- ./restore.sh
 
 # How to Run
 After make install you can run ndpiReaderCPP binary from any path you want.
@@ -28,6 +32,7 @@ After sending ^C (hitting CTRL+C ) signal, program will stop and dump protocol a
 
 # Future
 zerocopy mechanism will be implemented via mmap()
+
 Netmap network driver integration for fast packet processing, https://github.com/luigirizzo/netmap. 
 
 
