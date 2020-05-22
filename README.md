@@ -35,7 +35,7 @@ zerocopy mechanism will be implemented via mmap()
 
 Netmap network driver integration for fast packet processing, https://github.com/luigirizzo/netmap. 
 
-
+Will distribute as .deb package also
 
 
 
